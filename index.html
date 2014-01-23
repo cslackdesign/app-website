@@ -9,6 +9,10 @@
   <link href="css/skiplinks.css" rel="stylesheet">
   <link href="css/general.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+
+  <!--FONTS-->
+  <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
 
   <!--SEO-->
   <meta name="description" content="Shopit">
@@ -45,64 +49,44 @@
     <li><a href="#navigation">Skip to Navigation</a></li>
   </ul>
 
-  <header>
 
-    <nav id="#navigation">
-      <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">terms</a></li>
-        <li><a href="#">buy now</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <div class="grid landing">
-    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
+<div class="landing">
+  <div class="grid">
+    <div class="heading unit unit-s-1 unit-m-1-2 unit-l-1-2">
       <h1>Shopit</h1>
-      <p> Shop local, think global.</p>
-      <button>Buy Now</button>
+      <p>Shopping local, thinking global.</p>
     </div>
-    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="flex-img" src="http://placekitten.com/300/300" alt="screens">
-    </div>
-  </div>
+    <div class="video unit unit-s-1 unit-m-1-2 unit-l-1-2">
+      <button id="btn-open"></button>
+      <img class="flex-img" src="img/cover.png" alt="cover">
 
-
-  <div class="grid images-2">
-
-    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="flex-img" src="http://placekitten.com/300/300" alt="screens">
-    </div>
-    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
-      <h2>Local businesses at your fingertips.</h2>
     </div>
   </div>
+</div>
 
-  <div class="grid images">
-    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
-      <h3>Search for local stores, or shop online.</h3>
+<div class="carousel-wrap">
+  <div class="carousel">
+
+    <div class="carousel-items">
+      <img data-state="current" src="img/carousel-images/screen-0.png" alt="item 1">
+      <img src="img/carousel-images/screen-1.png" alt="item 2">
+      <img src="img/carousel-images/screen-2.png" alt="item 3">
+      <img src="img/carousel-images/screen-3.png" alt="item 4">
+      <img src="img/carousel-images/screen-4.png" alt="item 5">
     </div>
-    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="flex-img" src="http://placekitten.com/300/300" alt="screens">
+
+    <div class="carousel-buttons">
+      <button class="slide-btn next"></button>
+      <button class="slide-btn prev"></button>
     </div>
-  </div>
-
-  <div class="buy-now">
-    <button>Buy Now</button>
 
   </div>
+</div>
 
 
-  <footer>
-    <ul>
-      <li><a href="#">about</a></li>
-      <li><a href="#">terms</a></li>
-      <li><a href="#">pricing</a></li>
-      <li><a href="#">contact</a></li>
-    </ul>
-  </footer>
-
+<!--JS-->
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="js/carousel.js"></script>
 
 
 </body>

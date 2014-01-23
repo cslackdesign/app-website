@@ -25,6 +25,11 @@
   word-spacing: normal;
 }
 
+.flex-img{
+  display: block;
+  width: 100%;
+}
+
 .unit-spacer {
   padding: 8px;
 }
